@@ -1,38 +1,10 @@
-# php-openapi-client-template
+# foobar-sdk
 
-A small starter for OpenAPI-based client libraries.
+An API client.
 
-## Install
+## Next steps
 
-```bash
-composer require cedricziel/leonardoai-php
-```
-
-## Usage
-
-You need an API key from Leonardo
-
-### Client creation
-
-```php
-$authenticationRegistry = new AuthenticationRegistry([new ApiKeyAuthentication('my-api-key')]);
-$client = Client::create(null, [$authenticationRegistry]);
-```
-
-### Get current user
-
-```php
-$client->getUserSelf();
-```
-
-### Image Generation: Create
-
-```php
-$body = GenerationsPostBody();
-$body->setPrompt('A cat on a tree');
-$res = $client->createGeneration($body);
-```
-
-## License
-
-MIT
+- [x] Use the template to kickstart your repository
+- [ ] Add your OpenAPI spec to `openapi.json`. The client will be regenerated  every time you push to the repository
+- [ ] Add your LICENSE to the project
+- [ ] Add a release-please token secret as `MY_RELEASE_PLEASE_TOKEN` to the repository to benefit from automatic releases
